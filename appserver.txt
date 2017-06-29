@@ -4,6 +4,6 @@ Resources:
     Type: 'AWS::EC2::Instance'
     DeletionPolicy: Delete
     Properties:
-      ImageId: ami-bb2d53d4
+      ImageId: ami-b2784aa4
       InstanceType: t2.micro
       KeyName: Test
