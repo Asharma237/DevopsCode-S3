@@ -7,3 +7,7 @@ Resources:
       ImageId: ami-cd1029db
       InstanceType: t2.micro
       KeyName: devops
+      Tags:
+        - Key: Name
+          Value: appserver
+      
