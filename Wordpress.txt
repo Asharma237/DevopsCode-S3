@@ -94,7 +94,7 @@
       "us-east-1"        : { "HVM64" : "ami-f5f41398" },
       "us-west-2"        : { "HVM64" : "ami-d0f506b0" },
       "us-west-1"        : { "HVM64" : "ami-6e84fa0e" },
-      "eu-west-1"        : { "HVM64" : "ami-657bd20a" }
+      "eu-central-1"     : { "HVM64" : "ami-657bd20a" }
     }
   },
   "Resources" : {
