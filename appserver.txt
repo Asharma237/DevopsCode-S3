@@ -5,7 +5,7 @@ Resources:
     DeletionPolicy: Delete
     Properties:
       ImageId: ami-13f15e7c
-      InstanceType: t2.small
+      InstanceType: t2.micro
       KeyName: devops
       Tags:
         - Key: Name
