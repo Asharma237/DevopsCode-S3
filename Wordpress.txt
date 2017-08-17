@@ -154,7 +154,7 @@
       "Properties" : {
         "VPCZoneIdentifier": { "Ref" : "PrivateSubnets" },
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig" },
-        "MinSize" : "1",
+        "MinSize" : "2",
         "MaxSize" : "5",
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "LoadBalancerNames" : [ { "Ref" : "ElasticLoadBalancer" } ]
