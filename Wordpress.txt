@@ -70,7 +70,7 @@
       "ConstraintDescription" : "must be either true or false."
     },
     "WebServerCapacity": {
-      "Default": "1",
+      "Default": "2",
       "Description" : "The initial number of WebServer instances",
       "Type": "Number",
       "MinValue": "1",
