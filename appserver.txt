@@ -4,10 +4,10 @@ Resources:
     Type: 'AWS::EC2::Instance'
     DeletionPolicy: Delete
     Properties:
-      ImageId: ami-04343412
+      ImageId: ami-8866709e
       InstanceType: t2.micro
       KeyName: devops
       Tags:
         - Key: Name
-          Value: appserver
+          Value: appserver-demo
       
