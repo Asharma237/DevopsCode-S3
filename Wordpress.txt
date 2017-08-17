@@ -70,7 +70,7 @@
       "ConstraintDescription" : "must be either true or false."
     },
     "WebServerCapacity": {
-      "Default": "2",
+      "Default": "3",
       "Description" : "The initial number of WebServer instances",
       "Type": "Number",
       "MinValue": "1",
@@ -154,7 +154,7 @@
       "Properties" : {
         "VPCZoneIdentifier": { "Ref" : "PrivateSubnets" },
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig" },
-        "MinSize" : "2",
+        "MinSize" : "3",
         "MaxSize" : "5",
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "LoadBalancerNames" : [ { "Ref" : "ElasticLoadBalancer" } ]
