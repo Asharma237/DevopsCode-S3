@@ -73,7 +73,7 @@
       "Default": "1",
       "Description" : "The initial number of WebServer instances",
       "Type": "Number",
-      "MinValue": "1",
+      "MinValue": "3",
       "MaxValue": "5",
       "ConstraintDescription" : "must be between 1 and 5 EC2 instances."
     },
@@ -154,7 +154,7 @@
       "Properties" : {
         "VPCZoneIdentifier": { "Ref" : "PrivateSubnets" },
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig" },
-        "MinSize" : "1",
+        "MinSize" : "3",
         "MaxSize" : "5",
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "LoadBalancerNames" : [ { "Ref" : "ElasticLoadBalancer" } ]
