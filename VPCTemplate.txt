@@ -32,7 +32,7 @@
         "EnableDnsHostnames": "True",
         "Tags": [
           { "Key": "Name", "Value":    { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-VPC"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ]
       }
     },
@@ -44,7 +44,7 @@
         "MapPublicIpOnLaunch": "True",
         "Tags": [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PublicAZ1"]] } },
-         { "Key": "Environment", "Value": "Development" }
+         { "Key": "Environment", "Value": "Prod" }
         ],
         "VpcId": { "Ref": "VPCBase" }
       }
@@ -57,7 +57,7 @@
         "MapPublicIpOnLaunch": "True",
         "Tags": [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PublicAZ2"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ],
         "VpcId": { "Ref": "VPCBase" }
       }
@@ -71,7 +71,7 @@
         "Tags": [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PrivateAZ1"]] } },
           { "Key": "Network", "Value": "private" },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ],
         "VpcId": { "Ref": "VPCBase" }
       }
@@ -85,7 +85,7 @@
         "Tags": [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PrivateAZ2"]] } },
           { "Key": "Network", "Value": "private" },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ],
         "VpcId": { "Ref": "VPCBase" }
       }
@@ -95,7 +95,7 @@
       "Properties" : {
         "Tags" : [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-IGW"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ]
       }
     },
@@ -112,7 +112,7 @@
         "VpcId" : { "Ref" : "VPCBase" },
         "Tags" : [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PublicRT"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ]
       }
     },
@@ -122,7 +122,7 @@
         "VpcId" : { "Ref" : "VPCBase" },
         "Tags" : [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PrivateAZ1RT"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ]
       }
     },
@@ -132,7 +132,7 @@
         "VpcId" : { "Ref" : "VPCBase" },
         "Tags" : [
           { "Key": "Name", "Value": { "Fn::Join" : ["", [{ "Ref" : "AWS::StackName" }, "-PrivateAZ2RT"]] } },
-          { "Key": "Environment", "Value": "Development" }
+          { "Key": "Environment", "Value": "Prod" }
         ]
       }
     },
